@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  isUserNameEmpty(): boolean {
+    if (this.userName == '') return true;
+    return false;
+  }
   title = 'assignment-2-databinding';
+  userName = ''
 }
